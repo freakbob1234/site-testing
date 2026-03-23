@@ -2,67 +2,119 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Bella | Salon Fryzjerski w Łodzi">
-	<main class="min-h-screen bg-rose-50 text-neutral-900">
-		<section class="bg-gradient-to-br from-rose-100 via-white to-amber-50">
-			<div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-				<p class="mb-4 inline-block rounded-full bg-rose-200 px-4 py-1 text-sm font-semibold tracking-wide text-rose-900">
-					Salon Bella - Łódź
-				</p>
-				<h1 class="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
-					Twoje wlosy w najlepszych rekach.
-				</h1>
-				<p class="mt-6 max-w-2xl text-lg text-neutral-700">
-					W Bella tworzymy fryzury, ktore podkreslaja Twoj styl. Strzyzenie, koloryzacja i pielegnacja
-					w przyjaznej atmosferze, w samym sercu Lodzi.
-				</p>
+<Layout title="Bella Studio | Salon Fryzjerski w Łodzi">
+	<div class="min-h-screen bg-neutral-950 text-neutral-100">
+		<header class="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/90 backdrop-blur">
+			<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+				<a href="#top" class="text-lg font-semibold tracking-wide text-white">Bella Studio</a>
+				<ul class="hidden items-center gap-8 text-sm font-medium text-neutral-300 md:flex">
+					<li><a href="#uslugi" class="transition hover:text-white">Usługi</a></li>
+					<li><a href="#o-nas" class="transition hover:text-white">O nas</a></li>
+					<li><a href="#kontakt" class="transition hover:text-white">Kontakt</a></li>
+				</ul>
 				<a
 					href="#kontakt"
-					class="mt-10 inline-flex rounded-full bg-rose-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-rose-700"
+					class="rounded-full border border-rose-400/70 px-4 py-2 text-sm font-semibold text-rose-200 transition hover:border-rose-300 hover:text-white"
 				>
-					Umow wizyte
+					Umów wizytę
 				</a>
-			</div>
-		</section>
+			</nav>
+		</header>
 
-		<section id="uslugi" class="mx-auto max-w-6xl px-6 py-20">
-			<div class="mb-10">
-				<h2 class="text-3xl font-bold md:text-4xl">Nasze uslugi</h2>
-				<p class="mt-3 text-neutral-700">Profesjonalna obsluga dopasowana do Twoich potrzeb.</p>
-			</div>
-			<div class="grid gap-6 md:grid-cols-3">
-				<article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-rose-100">
-					<h3 class="text-xl font-semibold">Strzyzenie damskie i meskie</h3>
-					<p class="mt-3 text-neutral-700">
-						Precyzyjne ciecie i stylizacja dobrane do ksztaltu twarzy oraz codziennej pielegnacji.
+		<main id="top">
+			<section class="relative overflow-hidden">
+				<div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,114,182,0.25),_transparent_50%)]"></div>
+				<div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
+					<p class="inline-flex rounded-full border border-rose-300/30 bg-rose-400/10 px-4 py-1 text-sm font-medium text-rose-200">
+						Salon fryzjerski w Łodzi
 					</p>
-				</article>
-				<article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-rose-100">
-					<h3 class="text-xl font-semibold">Koloryzacja i baleyage</h3>
-					<p class="mt-3 text-neutral-700">
-						Nowoczesne techniki koloryzacji, od subtelnych refleksow po pelna metamorfoze.
+					<h1 class="mt-6 max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl">
+						Nowoczesne fryzjerstwo z klasą w Bella Studio
+					</h1>
+					<p class="mt-6 max-w-2xl text-lg text-neutral-300">
+						Tworzymy fryzury, które podkreślają Twój styl i charakter. Profesjonalne cięcie, koloryzacja oraz
+						stylizacja w eleganckiej, komfortowej atmosferze.
 					</p>
-				</article>
-				<article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-rose-100">
-					<h3 class="text-xl font-semibold">Pielegnacja i regeneracja</h3>
-					<p class="mt-3 text-neutral-700">
-						Zabiegi odbudowujace, ktore przywracaja blask, miekkosc i zdrowy wyglad wlosow.
-					</p>
-				</article>
-			</div>
-		</section>
+					<a
+						href="#kontakt"
+						class="mt-10 inline-flex rounded-full bg-rose-500 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-rose-900/40 transition hover:bg-rose-400"
+					>
+						Zarezerwuj termin
+					</a>
+				</div>
+			</section>
 
-		<section id="kontakt" class="bg-neutral-900 py-20 text-white">
-			<div class="mx-auto max-w-6xl px-6">
-				<h2 class="text-3xl font-bold md:text-4xl">Kontakt</h2>
+			<section id="uslugi" class="mx-auto max-w-6xl px-6 py-20">
+				<div class="mb-10">
+					<h2 class="text-3xl font-bold text-white md:text-4xl">Usługi i ceny</h2>
+					<p class="mt-3 text-neutral-300">Transparentny cennik i jakość, której możesz zaufać.</p>
+				</div>
+				<div class="grid gap-6 md:grid-cols-3">
+					<article class="rounded-2xl border border-white/10 bg-neutral-900/70 p-6 shadow-xl shadow-black/20">
+						<p class="text-sm font-medium uppercase tracking-wide text-rose-200">Haircut</p>
+						<h3 class="mt-3 text-2xl font-semibold text-white">Strzyżenie</h3>
+						<p class="mt-3 text-neutral-300">
+							Precyzyjne cięcie dopasowane do kształtu twarzy i codziennego stylu.
+						</p>
+						<p class="mt-6 text-xl font-bold text-rose-300">od 120 PLN</p>
+					</article>
+					<article class="rounded-2xl border border-white/10 bg-neutral-900/70 p-6 shadow-xl shadow-black/20">
+						<p class="text-sm font-medium uppercase tracking-wide text-rose-200">Coloring</p>
+						<h3 class="mt-3 text-2xl font-semibold text-white">Koloryzacja</h3>
+						<p class="mt-3 text-neutral-300">
+							Refleksy, balayage lub pełna metamorfoza koloru wykonana nowoczesnymi technikami.
+						</p>
+						<p class="mt-6 text-xl font-bold text-rose-300">od 220 PLN</p>
+					</article>
+					<article class="rounded-2xl border border-white/10 bg-neutral-900/70 p-6 shadow-xl shadow-black/20">
+						<p class="text-sm font-medium uppercase tracking-wide text-rose-200">Styling</p>
+						<h3 class="mt-3 text-2xl font-semibold text-white">Stylizacja</h3>
+						<p class="mt-3 text-neutral-300">
+							Profesjonalna stylizacja na co dzień i wyjątkowe okazje z trwałym efektem.
+						</p>
+						<p class="mt-6 text-xl font-bold text-rose-300">od 150 PLN</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="o-nas" class="border-y border-white/10 bg-neutral-900/40 py-20">
+				<div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-2 md:items-center">
+					<div>
+						<h2 class="text-3xl font-bold text-white md:text-4xl">O Bella Studio</h2>
+						<p class="mt-5 text-neutral-300">
+							Jesteśmy zespołem stylistów z pasją do pięknych i zdrowych włosów. Łączymy doświadczenie,
+							trendy oraz indywidualne podejście, aby każda wizyta była wyjątkowym doświadczeniem.
+						</p>
+						<p class="mt-4 text-neutral-300">
+							W Bella Studio stawiamy na najwyższą jakość usług, profesjonalne kosmetyki i elegancki klimat,
+							w którym możesz się zrelaksować.
+						</p>
+					</div>
+					<div class="rounded-3xl border border-white/10 bg-gradient-to-br from-neutral-900 to-neutral-800 p-8">
+						<p class="text-sm uppercase tracking-wider text-rose-200">Dlaczego my</p>
+						<ul class="mt-4 space-y-3 text-neutral-200">
+							<li>Doświadczeni styliści i indywidualne konsultacje</li>
+							<li>Nowoczesne techniki strzyżenia i koloryzacji</li>
+							<li>Wysokiej klasy produkty do pielęgnacji włosów</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="kontakt" class="mx-auto max-w-6xl px-6 py-20">
+				<h2 class="text-3xl font-bold text-white md:text-4xl">Kontakt</h2>
 				<p class="mt-4 max-w-2xl text-neutral-300">
-					Chcesz zarezerwowac termin? Zadzwon do nas i wybierz dogodna godzine wizyty.
+					Zadzwoń i umów swoją wizytę. Chętnie doradzimy oraz dobierzemy dogodny termin.
 				</p>
-				<p class="mt-8 text-2xl font-semibold">
-					Telefon:
-					<a href="tel:+48421234567" class="text-rose-300 transition hover:text-rose-200">+48 42 123 45 67</a>
-				</p>
-			</div>
-		</section>
-	</main>
+				<div class="mt-8 inline-flex rounded-2xl border border-rose-300/30 bg-rose-400/10 px-6 py-4">
+					<p class="text-lg font-semibold text-white">
+						Telefon:
+						<a href="tel:+48123456789" class="ml-2 text-rose-200 transition hover:text-rose-100">
+							+48 123 456 789
+						</a>
+					</p>
+				</div>
+			</section>
+		</main>
+	</div>
 </Layout>
