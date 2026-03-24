@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.font-display {
+	font-family: "Cormorant Garamond", ui-serif, Georgia, serif;
+}

@@ -1,120 +1,282 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const fbUrl = "https://www.facebook.com/people/Jadalnia-Atmosfera/100049840697697/";
+const igUrl = "https://www.instagram.com/jadalniaatmosfera";
 ---
 
-<Layout title="Bella Studio | Salon Fryzjerski w Łodzi">
-	<div class="min-h-screen bg-neutral-950 text-neutral-100">
-		<header class="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/90 backdrop-blur">
-			<nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-				<a href="#top" class="text-lg font-semibold tracking-wide text-white">Bella Studio</a>
-				<ul class="hidden items-center gap-8 text-sm font-medium text-neutral-300 md:flex">
-					<li><a href="#uslugi" class="transition hover:text-white">Usługi</a></li>
-					<li><a href="#o-nas" class="transition hover:text-white">O nas</a></li>
-					<li><a href="#kontakt" class="transition hover:text-white">Kontakt</a></li>
+<Layout
+	title="Jadalnia Atmosfera — jadalnia i bar | Łódź, Ketlinga 21"
+	description="Dobra kuchnia z domową atmosferą. Na miejscu, na wynos i z dowozem. Łódź, ul. Ketlinga 21."
+>
+	<div class="min-h-screen bg-[#0c0a08] text-stone-200">
+		<header
+			class="sticky top-0 z-50 border-b border-amber-950/60 bg-[#0c0a08]/92 backdrop-blur-md"
+		>
+			<nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
+				<a href="#top" class="font-display text-lg font-semibold tracking-wide text-amber-100 md:text-xl">
+					Jadalnia Atmosfera
+				</a>
+				<ul class="hidden items-center gap-7 text-sm font-medium text-stone-400 md:flex">
+					<li><a href="#o-nas" class="transition hover:text-amber-200">O nas</a></li>
+					<li><a href="#kuchnia-eat" class="transition hover:text-amber-200">Kuchnia</a></li>
+					<li><a href="#nauwynos" class="transition hover:text-amber-200">Na miejscu</a></li>
+					<li><a href="#kontakt" class="transition hover:text-amber-200">Kontakt</a></li>
 				</ul>
 				<a
-					href="#kontakt"
-					class="rounded-full border border-rose-400/70 px-4 py-2 text-sm font-semibold text-rose-200 transition hover:border-rose-300 hover:text-white"
+					href="tel:+48881424242"
+					class="shrink-0 rounded-full border border-amber-600/50 bg-amber-950/40 px-4 py-2 text-sm font-semibold text-amber-100 transition hover:border-amber-500 hover:bg-amber-950/70"
 				>
-					Umów wizytę
+					Zadzwoń
 				</a>
 			</nav>
 		</header>
 
 		<main id="top">
 			<section class="relative overflow-hidden">
-				<div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,114,182,0.25),_transparent_50%)]"></div>
-				<div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
-					<p class="inline-flex rounded-full border border-rose-300/30 bg-rose-400/10 px-4 py-1 text-sm font-medium text-rose-200">
-						Salon fryzjerski w Łodzi
-					</p>
-					<h1 class="mt-6 max-w-3xl text-4xl font-bold leading-tight text-white md:text-6xl">
-						Nowoczesne fryzjerstwo z klasą w Bella Studio
-					</h1>
-					<p class="mt-6 max-w-2xl text-lg text-neutral-300">
-						Tworzymy fryzury, które podkreślają Twój styl i charakter. Profesjonalne cięcie, koloryzacja oraz
-						stylizacja w eleganckiej, komfortowej atmosferze.
-					</p>
-					<a
-						href="#kontakt"
-						class="mt-10 inline-flex rounded-full bg-rose-500 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-rose-900/40 transition hover:bg-rose-400"
+				<div
+					class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_50%_-20%,rgba(180,83,9,0.35),transparent_55%),radial-gradient(circle_at_80%_60%,rgba(120,53,15,0.2),transparent_45%)]"
+					aria-hidden="true"
+				/>
+				<div class="relative mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+					<p
+						class="inline-flex rounded-full border border-amber-800/50 bg-amber-950/40 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-amber-200/90"
 					>
-						Zarezerwuj termin
-					</a>
-				</div>
-			</section>
-
-			<section id="uslugi" class="mx-auto max-w-6xl px-6 py-20">
-				<div class="mb-10">
-					<h2 class="text-3xl font-bold text-white md:text-4xl">Usługi i ceny</h2>
-					<p class="mt-3 text-neutral-300">Transparentny cennik i jakość, której możesz zaufać.</p>
-				</div>
-				<div class="grid gap-6 md:grid-cols-3">
-					<article class="rounded-2xl border border-white/10 bg-neutral-900/70 p-6 shadow-xl shadow-black/20">
-						<p class="text-sm font-medium uppercase tracking-wide text-rose-200">Haircut</p>
-						<h3 class="mt-3 text-2xl font-semibold text-white">Strzyżenie</h3>
-						<p class="mt-3 text-neutral-300">
-							Precyzyjne cięcie dopasowane do kształtu twarzy i codziennego stylu.
-						</p>
-						<p class="mt-6 text-xl font-bold text-rose-300">od 120 PLN</p>
-					</article>
-					<article class="rounded-2xl border border-white/10 bg-neutral-900/70 p-6 shadow-xl shadow-black/20">
-						<p class="text-sm font-medium uppercase tracking-wide text-rose-200">Coloring</p>
-						<h3 class="mt-3 text-2xl font-semibold text-white">Koloryzacja</h3>
-						<p class="mt-3 text-neutral-300">
-							Refleksy, balayage lub pełna metamorfoza koloru wykonana nowoczesnymi technikami.
-						</p>
-						<p class="mt-6 text-xl font-bold text-rose-300">od 220 PLN</p>
-					</article>
-					<article class="rounded-2xl border border-white/10 bg-neutral-900/70 p-6 shadow-xl shadow-black/20">
-						<p class="text-sm font-medium uppercase tracking-wide text-rose-200">Styling</p>
-						<h3 class="mt-3 text-2xl font-semibold text-white">Stylizacja</h3>
-						<p class="mt-3 text-neutral-300">
-							Profesjonalna stylizacja na co dzień i wyjątkowe okazje z trwałym efektem.
-						</p>
-						<p class="mt-6 text-xl font-bold text-rose-300">od 150 PLN</p>
-					</article>
-				</div>
-			</section>
-
-			<section id="o-nas" class="border-y border-white/10 bg-neutral-900/40 py-20">
-				<div class="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-2 md:items-center">
-					<div>
-						<h2 class="text-3xl font-bold text-white md:text-4xl">O Bella Studio</h2>
-						<p class="mt-5 text-neutral-300">
-							Jesteśmy zespołem stylistów z pasją do pięknych i zdrowych włosów. Łączymy doświadczenie,
-							trendy oraz indywidualne podejście, aby każda wizyta była wyjątkowym doświadczeniem.
-						</p>
-						<p class="mt-4 text-neutral-300">
-							W Bella Studio stawiamy na najwyższą jakość usług, profesjonalne kosmetyki i elegancki klimat,
-							w którym możesz się zrelaksować.
-						</p>
+						Jadalnia i bar · Łódź
+					</p>
+					<h1
+						class="font-display mt-8 max-w-4xl text-4xl font-semibold leading-[1.1] text-stone-50 md:text-6xl md:leading-[1.05]"
+					>
+						Dobra kuchnia z <span class="text-amber-200/95 italic">domową</span> atmosferą
+					</h1>
+					<p class="mt-4 text-lg text-stone-400 md:text-xl">
+						ul. Ketlinga 21 · Łódź
+					</p>
+					<p class="mt-6 max-w-2xl text-base leading-relaxed text-stone-400 md:text-lg">
+						Zapraszamy na domowe smaki w wygodnym wydaniu — przy stoliku, na wynos lub z dowozem.
+						Spokojna atmosfera i kuchnia, przy której chce się zostać na dłużej.
+					</p>
+					<div class="mt-10 flex flex-wrap items-center gap-4">
+						<a
+							href="tel:+48881424242"
+							class="inline-flex rounded-full bg-gradient-to-r from-amber-700 to-amber-600 px-7 py-3.5 text-base font-semibold text-stone-950 shadow-lg shadow-amber-950/50 transition hover:from-amber-600 hover:to-amber-500"
+						>
+							Zarezerwuj / zamów — +48 881 424 242
+						</a>
+						<a
+							href={fbUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex rounded-full border border-stone-600 px-6 py-3.5 text-base font-medium text-stone-200 transition hover:border-amber-600/60 hover:text-amber-100"
+						>
+							Facebook
+						</a>
 					</div>
-					<div class="rounded-3xl border border-white/10 bg-gradient-to-br from-neutral-900 to-neutral-800 p-8">
-						<p class="text-sm uppercase tracking-wider text-rose-200">Dlaczego my</p>
-						<ul class="mt-4 space-y-3 text-neutral-200">
-							<li>Doświadczeni styliści i indywidualne konsultacje</li>
-							<li>Nowoczesne techniki strzyżenia i koloryzacji</li>
-							<li>Wysokiej klasy produkty do pielęgnacji włosów</li>
+				</div>
+			</section>
+
+			<section id="o-nas" class="border-y border-amber-950/50 bg-[#100e0b]/90 py-20 md:py-24">
+				<div class="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2 md:items-center md:gap-16 md:px-8">
+					<div>
+						<h2 class="font-display text-3xl font-semibold text-stone-50 md:text-4xl">
+							Klimat, który się czuje od progu
+						</h2>
+						<p class="mt-5 leading-relaxed text-stone-400">
+							Jadalnia Atmosfera to miejsce na co dzień i na spotkania w gronie znajomych — bez
+							presji i z jedzeniem, które przypomina dom. Łączymy wygodę baru z serdecznością
+							malej jadalni.
+						</p>
+						<p class="mt-4 leading-relaxed text-stone-400">
+							Łódź, ul. Ketlinga 21 — zapraszamy na miejscu, na wynos oraz z możliwością dowozu.
+						</p>
+						<a
+							href="#kontakt"
+							class="mt-8 inline-block text-sm font-semibold text-amber-400 underline-offset-4 hover:text-amber-300 hover:underline"
+						>
+							Zobacz dane kontaktowe
+						</a>
+					</div>
+					<div
+						class="rounded-2xl border border-amber-900/40 bg-gradient-to-br from-amber-950/30 to-stone-950/80 p-8 md:p-10"
+					>
+						<p class="text-xs font-semibold uppercase tracking-widest text-amber-500/90">Dlaczego my</p>
+						<ul class="mt-6 space-y-4 text-stone-300">
+							<li class="flex gap-3">
+								<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+								<span>Domowe przygotowanie i smaki, które zostają w pamięci</span>
+							</li>
+							<li class="flex gap-3">
+								<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+								<span>Na miejscu, na wynos i dowóz — jak Ci wygodniej</span>
+							</li>
+							<li class="flex gap-3">
+								<span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+								<span>Bar z przyjazną atmosferą w sercu Łodzi</span>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 
-			<section id="kontakt" class="mx-auto max-w-6xl px-6 py-20">
-				<h2 class="text-3xl font-bold text-white md:text-4xl">Kontakt</h2>
-				<p class="mt-4 max-w-2xl text-neutral-300">
-					Zadzwoń i umów swoją wizytę. Chętnie doradzimy oraz dobierzemy dogodny termin.
-				</p>
-				<div class="mt-8 inline-flex rounded-2xl border border-rose-300/30 bg-rose-400/10 px-6 py-4">
-					<p class="text-lg font-semibold text-white">
-						Telefon:
-						<a href="tel:+48123456789" class="ml-2 text-rose-200 transition hover:text-rose-100">
-							+48 123 456 789
-						</a>
+			<section id="kuchnia-eat" class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+				<div class="mb-14 max-w-2xl">
+					<h2 class="font-display text-3xl font-semibold text-stone-50 md:text-4xl">
+						Odkryj naszą kuchnię
+					</h2>
+					<p class="mt-4 text-stone-400">
+						Proste, sycące propozycje i sezonowe akcenty — idealne na lunch, kolację lub wieczór
+						z przyjaciółmi.
 					</p>
+				</div>
+				<div class="grid gap-8 md:grid-cols-3">
+					<article
+						class="group rounded-2xl border border-stone-800 bg-stone-950/50 p-8 transition hover:border-amber-900/60"
+					>
+						<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">Na miejscu</p>
+						<h3 class="font-display mt-4 text-2xl font-semibold text-stone-100">Przy stoliku</h3>
+						<p class="mt-3 leading-relaxed text-stone-400">
+							Zatrzymaj się na chwilę — jedzenie podane tak, jak lubisz, w spokojnej atmosferze baru.
+						</p>
+					</article>
+					<article
+						class="group rounded-2xl border border-stone-800 bg-stone-950/50 p-8 transition hover:border-amber-900/60"
+					>
+						<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">Na wynos</p>
+						<h3 class="font-display mt-4 text-2xl font-semibold text-stone-100">Zabierz ze sobą</h3>
+						<p class="mt-3 leading-relaxed text-stone-400">
+							Telefon i gotowe — zamów na odbiór osobisty, gdy jesteś w drodze.
+						</p>
+					</article>
+					<article
+						class="group rounded-2xl border border-stone-800 bg-stone-950/50 p-8 transition hover:border-amber-900/60"
+					>
+						<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">Dowóz</p>
+						<h3 class="font-display mt-4 text-2xl font-semibold text-stone-100">Pod wskazany adres</h3>
+						<p class="mt-3 leading-relaxed text-stone-400">
+							Dopytaj o dostępność dowozu przy zamówieniu — chętnie doradzimy.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="nauwynos" class="relative overflow-hidden border-y border-amber-950/50 py-20 md:py-24">
+				<div
+					class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(146,64,14,0.15),transparent_50%)]"
+					aria-hidden="true"
+				/>
+				<div class="relative mx-auto max-w-6xl px-5 text-center md:px-8">
+					<h2 class="font-display text-3xl font-semibold text-stone-50 md:text-4xl">
+						Dla nas goście są na pierwszym miejscu
+					</h2>
+					<p class="mx-auto mt-5 max-w-2xl text-stone-400">
+						Zadzwoń, napisz lub odwiedź nas na Facebooku i Instagramie — tam znajdziesz aktualne
+						dania, promocje i godziny otwarcia.
+					</p>
+					<div class="mt-10 flex flex-wrap justify-center gap-4">
+						<a
+							href="tel:+48881424242"
+							class="inline-flex rounded-full bg-amber-600 px-8 py-3.5 text-base font-semibold text-stone-950 transition hover:bg-amber-500"
+						>
+							+48 881 424 242
+						</a>
+						<a
+							href="mailto:sylwia_mikolajek@interia.pl"
+							class="inline-flex rounded-full border border-stone-600 px-8 py-3.5 text-base font-medium text-stone-200 transition hover:border-amber-600/50 hover:text-amber-100"
+						>
+							sylwia_mikolajek@interia.pl
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section id="kontakt" class="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+				<h2 class="font-display text-3xl font-semibold text-stone-50 md:text-4xl">Kontakt</h2>
+				<div class="mt-12 grid gap-10 md:grid-cols-2">
+					<div class="space-y-6">
+						<div>
+							<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">Adres</p>
+							<p class="mt-2 text-lg text-stone-200">ul. Ketlinga 21<br />Łódź</p>
+						</div>
+						<div>
+							<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">Telefon</p>
+							<a
+								href="tel:+48881424242"
+								class="mt-2 block text-lg font-medium text-amber-200 transition hover:text-amber-100"
+							>
+								+48 881 424 242
+							</a>
+						</div>
+						<div>
+							<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">E-mail</p>
+							<a
+								href="mailto:sylwia_mikolajek@interia.pl"
+								class="mt-2 block text-lg text-amber-200/90 underline-offset-2 hover:text-amber-100 hover:underline"
+							>
+								sylwia_mikolajek@interia.pl
+							</a>
+						</div>
+					</div>
+					<div class="rounded-2xl border border-stone-800 bg-stone-950/40 p-8">
+						<p class="text-xs font-semibold uppercase tracking-widest text-amber-600/90">Social media</p>
+						<ul class="mt-6 space-y-4">
+							<li>
+								<a
+									href={fbUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="font-medium text-stone-200 transition hover:text-amber-200"
+								>
+									Facebook — Jadalnia Atmosfera
+								</a>
+							</li>
+							<li>
+								<a
+									href={igUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="font-medium text-stone-200 transition hover:text-amber-200"
+								>
+									Instagram — @jadalniaatmosfera
+								</a>
+							</li>
+						</ul>
+						<p class="mt-8 text-sm leading-relaxed text-stone-500">
+							Aktualne godziny otwarcia i menu publikujemy na profilu
+							<a href={fbUrl} target="_blank" rel="noopener noreferrer" class="text-amber-600/90 hover:underline"
+								>Facebook</a
+							>.
+						</p>
+					</div>
 				</div>
 			</section>
 		</main>
+
+		<footer class="border-t border-amber-950/50 bg-[#080706] py-12">
+			<div class="mx-auto flex max-w-6xl flex-col gap-8 px-5 md:flex-row md:items-start md:justify-between md:px-8">
+				<div>
+					<p class="font-display text-lg font-semibold text-amber-100">Jadalnia Atmosfera</p>
+					<p class="mt-2 text-sm text-stone-500">Bar · jadalnia · Łódź</p>
+				</div>
+				<div class="grid gap-8 text-sm sm:grid-cols-2 md:gap-16">
+					<div>
+						<p class="font-semibold text-stone-400">Szybkie linki</p>
+						<ul class="mt-3 space-y-2 text-stone-500">
+							<li><a href="#o-nas" class="hover:text-amber-200/80">O nas</a></li>
+							<li><a href="#kuchnia-eat" class="hover:text-amber-200/80">Kuchnia</a></li>
+							<li><a href="#kontakt" class="hover:text-amber-200/80">Kontakt</a></li>
+						</ul>
+					</div>
+					<div>
+						<p class="font-semibold text-stone-400">Zamówienia</p>
+						<p class="mt-3 text-stone-500">
+							<a href="tel:+48881424242" class="text-amber-200/80 hover:text-amber-100">+48 881 424 242</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<p class="mx-auto mt-10 max-w-6xl px-5 text-center text-xs text-stone-600 md:px-8">
+				© {new Date().getFullYear()} Jadalnia Atmosfera. Strona informacyjna — treści mogą ulec zmianie.
+			</p>
+		</footer>
 	</div>
 </Layout>
